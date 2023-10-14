@@ -19,6 +19,7 @@ body{
     width: 90%;
     max-width: 300px;
     border: 1px solid var(--main-color);
+    box-shadow: 0 2px 4px rgb(0 0 0 / 50);
 }
 
 .calendrier .calendrier-header{
@@ -51,4 +52,20 @@ body{
     grid-template-columns: repeat(7, 1fr); /** Avoir 7 colones avec la meme distribution */
     text-align: center;
     background-color: rgb(238, 235, 235);
+    cursor: pointer;
+    padding: 5px;
 }
+
+i{
+    cursor: pointer;
+}
+
+.calendrier .calendrier-content .day-item:hover{
+    background-color: var(--main-color);
+} 
+
+/**
+    .calendrier .calendrier-content .day-item:nth-child(1){
+        grid-column: 4/5;
+    }
+ */
